@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0px;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 40vh;
+  margin: 0px;
+  padding: 0px;
+  background: #2D2D2D;
+}
+
+header .nav-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .nav-block .title {
+  margin-bottom: 5px;
+}
+
+header .nav-block .title h1 {
+  font-family: 'Bebas Neue';
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+header .nav-block nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header .nav-block nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  gap: 13px;
+  padding-left: 0px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  margin-top: 5px;
+}
+
+header .nav-block nav ul li {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .nav-block nav ul li a {
+  font-family: 'Bebas Neue', 'cursive';
+  text-decoration: none;
+  color: black;
+  opacity: 100%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+header .nav-block nav ul li a:hover {
+  color: #a5a5a5;
+}
+
+main {
+  background-color: #454545;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main .content-body {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  width: 80vw;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+main .content-body .gallery-grid-line-1 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  width: 80vw;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item1 {
+  height: 50vh;
+  width: 50vh;
+  background-image: url("https://bn02pap001files.storage.live.com/y4mPNoIxJraeZlt6QgW-K-ypGXYTdpreAM43x48nRB0y3L_Y7kyzGb87woFq6PSkw4-P7u3-t5g1wT-AHNDPXDZ333E3rBDSUo7K33N8747CYmU1M5vymmzebbE-GeWfn2CVyqr9SBIMnTgiOh5xhCPY0zqzrMV7TzknCqwoWFRqBfKR6f9Bh2pXLt1ERIpbPsj?width=1600&height=1600&cropmode=none");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item1 a .link-spanner {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0%;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item1 a .link-spanner h1 {
+  color: #a5a5a5;
+  font-size: 30px;
+  font-family: 'Bebas Neue', 'cursive';
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item1 a .link-spanner:hover {
+  opacity: 70%;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item2 {
+  height: 50vh;
+  width: 60vw;
+  background-image: url("https://bn02pap001files.storage.live.com/y4mI-x3e2aXRBWTFhaKqLtylISNBDNBBub8KFuUZRd1yVmtA0CG7bSWSPagg98DBmrueFjOKButT0bfJoVYMDOgW4bAuezpMjhyYHodllQJ99Bxp1edM3ZmAR-S2rSF4PZ1uuzEyXOQEB0KkJi9VSApKrJvLyFRgZSrxkl-htXIh7B7jVZFbY4OcAVOsjPGHuCm?width=1920&height=1080&cropmode=none");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item2 a .link-spanner {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0%;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item2 a .link-spanner h1 {
+  color: #a5a5a5;
+  font-size: 30px;
+  font-family: 'Bebas Neue', 'cursive';
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-1 #gallery-grid-item2 a .link-spanner:hover {
+  opacity: 70%;
+}
+
+main .content-body .gallery-grid-line-2 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+  gap: 15px;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item3 {
+  height: 50vh;
+  width: 50vw;
+  background-image: url("https://bn02pap001files.storage.live.com/y4mR9ooF5lwlyV_J52VDyJ57WmzHAv_l3wj9x3ZDgK4zlAqmKIp4fEGqBurHtPbjWBTaCM_oEMx5uIVBACoZIqmV2LbcEwWpOaNm8P8rR36z58IeohdnVEYl6Ql65aOm6TtTtkZMpR73IW4590mhEcDBg9fTidtT61-2ouvyAb3gCyHF-wB96tESC2U6q08TME9?width=1349&height=998&cropmode=none");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item3 a .link-spanner {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0%;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item3 a .link-spanner h1 {
+  color: #a5a5a5;
+  font-size: 30px;
+  font-family: 'Bebas Neue', 'cursive';
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item3 a .link-spanner:hover {
+  opacity: 70%;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item4 {
+  height: 50vh;
+  width: 30vw;
+  background-image: url("https://bn02pap001files.storage.live.com/y4m7DQX0XyTL4JZmIeeSKFyW6Iri7GZk2apX8Pq7U9NEc3RgVnm7m5Gu3g_t3RY21gxUV27H5WpTcLYgB3vMVBefJhA7MJ6no_YL4MDe_cJtFZ4Pnz2JGrbyKtYwA51HHCDOtDjguUOLeaTc5N9PlzKMNW1ORdc9vj-pZtCPIe_llpWoMB13Ir4NtedY59aDtUS?width=1920&height=1280&cropmode=none");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item4 a .link-spanner {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0%;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item4 a .link-spanner h1 {
+  color: #a5a5a5;
+  font-size: 30px;
+  font-family: 'Bebas Neue', 'cursive';
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-2 #gallery-grid-item4 a .link-spanner:hover {
+  opacity: 70%;
+}
+
+main .content-body .gallery-grid-line-3 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+  gap: 15px;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item5 {
+  height: 50vh;
+  width: 50vh;
+  background-image: url("https://bn02pap001files.storage.live.com/y4m6CMN4xG5w-_t3fREP4Ckv9BOcMdDx7BuWDbQmnUF4INRFY9CQWwkGl4-kmykn0U0kn0Tm55ZcHRE2CIbEQjD42vYP264VTbJRHwCu79cRhcrpfxE6mm23MQ1gSHiVxyy4OE_Gu3XBuawP5PkysuOAZC8vVao5JTGLOerK8Odav_gtWwkkj92WBdTYWDBvNA3?width=800&height=800&cropmode=none");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item5 a .link-spanner {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0%;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item5 a .link-spanner h1 {
+  color: #a5a5a5;
+  font-size: 30px;
+  font-family: 'Bebas Neue', 'cursive';
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item5 a .link-spanner:hover {
+  opacity: 70%;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item6 {
+  height: 50vh;
+  width: 60vw;
+  background-image: url("https://bn02pap001files.storage.live.com/y4mU6jlJKxUKGx0ECVQ5yyzxvaPSJ7HdWC0QQ7lGIIB2TrfKvMc9hwoTNClGtE4Oppm0yjyNoRkuHXXbtp0NGV72opPEWm2qm3PGEe9Z3IIer5_6hBrqC4TyKZfVhgcbpUpXWHvTAVcn-lBFDVWH0EJ9qjTKx_NRqMdp4HtdiH986nRGPHV-FIsei921rF6Fa7y?width=2074&height=901&cropmode=none");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item6 a .link-spanner {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0%;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item6 a .link-spanner h1 {
+  color: #a5a5a5;
+  font-size: 30px;
+  font-family: 'Bebas Neue', 'cursive';
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 2;
+}
+
+main .content-body .gallery-grid-line-3 #gallery-grid-item6 a .link-spanner:hover {
+  opacity: 70%;
+}
+
+footer {
+  background-color: #2D2D2D;
+  height: 25vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+footer .footer-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 10vh;
+  width: 50vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+footer .footer-grid #return-gallery {
+  font-family: 'Bebas Neue', 'cursive';
+  color: black;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  cursor: pointer;
+}
+
+footer .footer-grid #return-gallery:hover {
+  color: #a5a5a5;
+}
+
+footer .footer-grid p {
+  font-family: 'Barlow', 'sans serif';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
